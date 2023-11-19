@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <nav>
+        <a href="Index.html">Menu Principal</a>
+        <a href="Hojadevida1.html">Hoja de Vida 1</a>
+        <a href="Hojadevida2.html">Hoja de vida 2</a>
+        <a href="Hojadevida3.html">Hoja de vida 3</a>
+    <link rel="stylesheet" href="style.css">
+    <title>Carlos Andrés Serrano Agredo - Ingeniero de Soporte</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+            color: #333;
+            transition: background-color 0.3s ease;
+        }
+
+        header, footer {
+            background-color: #3498db;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            transition: background-color 0.3s ease;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 50%;
+            margin-bottom: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease;
+        }
+
+        section {
+            margin: 20px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: box-shadow 0.3s ease, background-color 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        a {
+            color: #3498db;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            color: #2962ff;
+        }
+
+        img:hover {
+            transform: scale(1.1);
+        }
+
+        section:hover {
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            background-color: #f9f9f9;
+        }
+
+        body:hover {
+            background-color: #e0e0e0;
+        }
+
+   
+        html {
+            scroll-behavior: smooth;
+        }
+
+        header a, footer a {
+            padding: 5px;
+            border-radius: 4px;
+            background-color: #2962ff;
+            color: #fff;
+            transition: background-color 0.3s ease;
+        }
+
+        header a:hover, footer a:hover {
+            background-color: #1a45b8;
+        }
+
+
+        header:hover, footer:hover {
+            background-color: #2979ff;
+        }
+
+        section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.8));
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        section:hover::before {
+            opacity: 1;
+        }
+
+       
+        h2, p {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.5s ease, transform 0.5s ease;
+            color: #333; 
+        }
+
+        section:hover h2, section:hover p {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="Imagenes/Foto.png" alt="Foto de Carlos Andrés Serrano Agredo">
+        <h1>Carlos Andrés Serrano Agredo</h1>
+        <p>Ingeniero de Soporte</p>
+    </header>
+
+    <section id="datos-personales">
+        <h2>Datos Personales</h2>
+        <div class="info-item">
+            <img src="Imagenes/3652267.png" alt="Icono de Fecha de nacimiento" width="60">
+            <p>Fecha de nacimiento: 17/05/2003</p>
+        </div>
+        <div class="info-item">
+            <img src="Imagenes/bb18bdbbef437b2d50518db5a8292c94.png" alt="Icono de Correo electrónico" width="60">
+            <p>Email: <a href="mailto:carlitosandresserrano2003@gmail.com">carlitosandresserrano2003@gmail.com</a></p>
+        </div>
+    </section>
+
+    <section id="educacion">
+        <h2>Educación</h2>
+        <div class="info-item">
+            <img src="Imagenes/2132544.png" alt="Icono de Educación" width="60">
+            <p>6º semestre de Ingeniería de Sistemas, Universidad UCOMPENSAR</p>
+        </div>
+    </section>
+
+    <section id="experiencia-laboral">
+        <div class="info-item">
+            <img src="Imagenes/2303952.png" alt="Icono de Experiencia Laboral" width="60">
+            <h2>Experiencia Laboral</h2>
+        </div>
+        <p>
+            Cargo: Ingeniero de soporte<br>
+            Funciones: Atención al cliente, Mantenimiento de equipos de cómputo, Configuración e instalación de software y supervisión de bots.<br>
+            Jefe Inmediato: Edgar Velasco<br>
+            Teléfono: +57 3239808585<br>
+            Fecha Inicio: 20 de febrero de 2023<br>
+            Fecha finalización: Actual<br>
+            Cargo: Aprendiz<br>
+            Funciones: Atención al cliente, Mantenimiento de equipos de cómputo y Configuración e instalación de software<br>
+            Jefe Inmediato: Heidi Mazabel<br>
+            Teléfono: +57 3124669291<br>
+            Fecha Inicio: agosto de 2022<br>
+            Fecha finalización: febrero de 2023
+        </p>
+    </section>
+
+    <section id="habilidades">
+        <div class="info-item">
+            <img src="Imagenes/6171939.png" alt="Icono de Habilidades" width="60">
+            <h2>Habilidades</h2>
+        </div>
+        <ul>
+            <li>Autoaprendizaje</li>
+            <li>Responsabilidad</li>
+            <li>Proactividad</li>
+        </ul>
+    </section>
+    
+    <footer>
+        <div class="info-item">
+            <img src="Imagenes/353697866fb06d6d47ab24d9d03e3970.png" alt="Icono de Contacto" width="60">
+            <p>Contacto: <a href="mailto:carlitosandresserrano2003@gmail.com">carlitosandresserrano2003@gmail.com</a></p>
+        </div>
+    </footer>
+</body>
+</html>
+
+
+
+
+
